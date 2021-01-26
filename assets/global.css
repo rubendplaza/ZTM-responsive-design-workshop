@@ -14,7 +14,7 @@
 html,
 body {
   /* smooth scroll between links in the same file */
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
   /* baseline that is recommended for readability */
   line-height: 1.5;
   /* take up 100% of view port */
