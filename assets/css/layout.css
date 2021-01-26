@@ -1,0 +1,25 @@
+main {
+  display: grid;
+  /* we want 3 columns, having some padding on the sides */
+  grid-template-columns: auto var(--centerColumn) auto;
+  row-gap: var(--rowGap);
+}
+
+main > * {
+  /* we want everything to be in our center column which is the second column of our 3 columns */
+  grid-column: 2;
+  padding: 0 var(--gap);
+}
+
+/* commonly referred to as full bleed */
+.full-width {
+  grid-column: 1/-1;
+  padding: var(--rowGap) var(--gap);
+}
+
+.header-wrapper,
+.footer-wrapper {
+  max-width: var(--centerColumn);
+  padding: var(--gap);
+  margin: 0 auto;
+}

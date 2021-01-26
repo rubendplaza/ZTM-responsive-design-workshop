@@ -1,0 +1,46 @@
+header {
+  /* sticky header */
+  position: sticky;
+  top: 0;
+  background-color: var(--lightBlue);
+  border-bottom: 1px solid var(--red);
+  box-shadow: var(--smShadow);
+}
+
+.header-wrapper {
+  display: grid;
+  align-items: center;
+  grid-template-rows: 1fr 1fr;
+}
+
+.menu {
+  font-weight: 300;
+  text-transform: uppercase;
+  display: flex;
+  gap: var(--gap);
+}
+
+.logo,
+.contact-btn {
+  grid-area: 1 / 1 / 2 / -1;
+}
+
+.contact-btn {
+  justify-self: end;
+  border-bottom: none;
+}
+
+.contact-btn > button {
+  background: white;
+  border: 1px solid var(--red);
+  color: var(--red);
+}
+
+.contact-btn > button:hover {
+  background: var(--red);
+  color: var(--lightBlue);
+}
+
+.contact-btn:hover {
+  border-bottom: none;
+}

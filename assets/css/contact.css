@@ -1,0 +1,39 @@
+#contact {
+  text-align: center;
+  display: grid;
+  gap: var(--gap);
+  justify-items: center;
+}
+
+.contact-wrapper {
+  place-items: center;
+  display: grid;
+  gap: var(--gap);
+  max-width: 40ch;
+  margin: 0 auto;
+}
+
+#contact form {
+  justify-self: stretch;
+  display: flex;
+  gap: var(--gap);
+  font-size: clamp(var(--mdText), 2vw, var(--lgText));
+}
+
+#email {
+  padding: 0.25rem;
+  justify-self: stretch;
+  width: 100%;
+}
+
+#subscribe {
+  padding: clamp(0, 8px, 0.25rem);
+  font-size: clamp(var(--mdText), 2vw, var(--lgText));
+}
+
+#contact strong {
+  color: var(--heading);
+  font-weight: bold;
+  font-style: italic;
+  font-size: var(--mdText);
+}

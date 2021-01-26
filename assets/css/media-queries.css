@@ -1,0 +1,60 @@
+/* vertical tablet */
+@media only screen and (min-width: 768px) {
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .projects-wrapper article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    place-items: center;
+  }
+
+  .project-one > .project-text,
+  .project-three > .project-text {
+    grid-column: 2 /-1;
+  }
+
+  .project-two > img {
+    grid-column: 2/-1;
+  }
+
+  .project-image {
+    width: 85%;
+  }
+
+  .project-two > .project-text {
+    grid-row: 1/2;
+  }
+
+  .company-logos {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+/* Desktop Sizes */
+@media only screen and (min-width: 1024px) {
+  .hero {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 5rem;
+    place-items: center;
+    grid-column: 1/-1;
+    height: calc(100vh - 200px);
+  }
+
+  .testimonials-cards {
+    grid-template-columns: 40ch 40ch;
+  }
+
+  .testimonial:last-child {
+    grid-column: 1/-1;
+  }
+
+  .price-cards {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}

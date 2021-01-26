@@ -3,6 +3,7 @@
 /******* RESET ********/
 
 /* additional resets I want to apply on top of remedy */
+/* Takes off weird margins and paddings */
 *,
 ::before,
 ::after {
@@ -12,10 +13,15 @@
 
 html,
 body {
-  scroll-behavior: smooth;
+  /* smooth scroll between links in the same file */
+  scroll-behavior: smooth; 
+  /* baseline that is recommended for readability */
   line-height: 1.5;
+  /* take up 100% of view port */
   min-height: 100%;
+  /* imported above */
   font-family: 'Roboto', sans-serif;
+  /* more readable */
   text-rendering: optimizeLegibility;
 }
 
@@ -82,6 +88,7 @@ body {
 
 body {
   color: var(--text);
+  /* 1rem needed so when client changes their font size, it scales with it */
   font-size: clamp(100%, 1rem + 0.25vw, 2rem);
   display: grid;
   grid-template-rows: auto 1fr auto;
@@ -108,11 +115,6 @@ h2 {
 
 h3 {
   font-size: clamp(1.25rem, 1.25rem + 0.75vw, 2.25rem);
-}
-
-img {
-  max-width: 100%;
-  display: block;
 }
 
 input,
